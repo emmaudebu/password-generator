@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Password Generator App</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form id="pg-form">
+                <div class=" deactive ">
+                    <p class="messageDiv ">'Your secured password have been copied'</p>
+                </div>
+                <div class="result">
+                    <input type="text" id="result" readonly placeholder="Min 6 chars">
+                    <div class="clipboard">
+                        <ion-icon name="clipboard"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="field">
+                        <label for="length">Length</label>
+                        <input type="number" name="length" id="length" value="12" min="6">
+                    </div>
+                    <div class="field">
+                        <label for="Capital">Capital Letter</label>
+                        <input type="checkbox" checked name="Capital" id="Capital">
+                    </div>
+                    <div class="field">
+                        <label for="Small">Small Letter</label>
+                        <input type="checkbox" checked name="Small" id="Small">
+                    </div>
+                    <div class="field">
+                        <label for="number">Numbers</label>
+                        <input type="checkbox" name="number" id="number">
+                    </div>
+                    <div class="field">
+                        <label for="symbol">Special characters</label>
+                        <input type="checkbox" name="symbol" id="symbol">
+                    </div>
+
+                </div>
+                <button type="submit">Generate Password</button>
+            </form>
+            <div class="copyright">
+                <p>Desiged by <a href="https://ifeanyichukwu.netlify.app/">TechGuy</a> </p>
+            </div>
+
+        </div>
+    </section>
+    <script src=" https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

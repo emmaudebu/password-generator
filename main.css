@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif
+}
+
+body {
+    background: #16191b;
+    color: #fff;
+    font-size: 18px
+}
+
+.deactive {
+    background: rgb(168, 231, 168);
+    color: green;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+}
+
+.copyright a {
+    text-decoration: none;
+    background: rgb(168, 231, 168);
+    color: green;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.active {
+    background: rgb(168, 231, 168);
+    color: green;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+}
+
+.red {
+    background: rgb(239, 170, 170);
+    color: rgb(244, 47, 12);
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px
+}
+
+.container {
+    padding: 30px;
+    background: #303538;
+    box-shadow: 0 0 20px #00000011;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 7px
+}
+
+form {
+    width: 100%;
+    font-size: 20px
+}
+
+.result {
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden
+}
+
+.result #result {
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px
+}
+
+.result .clipboard {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4169e1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer
+}
+
+.field {
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: .3s ease background-color
+}
+
+.field:hover {
+    background-color: #1a1d1f
+}
+
+.field input[type=number] {
+    width: 50px;
+    outline: 0;
+    border: none;
+    padding-right: 0;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #fff
+}
+
+.field:first-of-type {
+    padding-right: 0
+}
+
+.field label {
+    cursor: pointer;
+    width: 100%
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: 0;
+    height: 50px;
+    background-color: #4169e1;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .field {
+        font-size: 16px
+    }
+
+    button {
+        font-size: 16px
+    }
+}
